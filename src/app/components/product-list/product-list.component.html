@@ -1,0 +1,29 @@
+<h1>PRODUCT DETAILS</h1>
+<table border="1">
+    <tr>
+        <th>Product Number</th>
+        <th>sku</th>
+        <th>product name</th>
+        <th>description</th>
+        <th>unitprice</th>
+        <th>imageurl</th>
+        <th>unitsinstock</th>
+        <th>datecreated</th>
+        <th>lastupdated</th>
+        <th>categoryid</th>
+        
+    </tr>
+
+    <tr *ngFor="let emp of products">
+        <th>{{emp.productId}}</th>
+        <th>{{emp.sku}}</th>
+        <th>{{emp.name}}</th>
+        <th>{{emp.description}}</th>
+        <th>{{emp.unitprice}}</th>
+        <th>{{emp.imageurl}}</th>
+        <th>{{emp.unitsInStrock}}</th>
+        <th>{{emp.dateCreated}}</th>
+        <th>{{emp.lastUpdated}}</th>
+        <th>{{emp.categoryId}}</th>
+    </tr>
+</table>
